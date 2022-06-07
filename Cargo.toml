@@ -1,0 +1,17 @@
+[package]
+name = "tap-plugin-local"
+version = "0.1.0"
+authors = ["Solal Jacob"]
+edition = "2021"
+
+[dependencies]
+tap = { version="0.1.0", git="https://github.com/tap-ir/tap.git" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
+log = { version = "0.4", features = ["std", "serde"] }
+typetag = "0.1.2"
+anyhow = { version = "1.0.40"}
+seek_bufread = "1.2.2"
+fdlimit = "0.2.1"
+lru = "0.7.1"
